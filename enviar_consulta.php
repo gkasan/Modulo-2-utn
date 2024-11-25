@@ -13,9 +13,7 @@ $mensaje_form = $_POST ['mensaje'];
 
 
 //$conexion = mysqli_connect('localhost', 'root', '','form_datos_utn') or exit ("No se pudo conectar a la base de datos");        
-$conexion = mysqli_connect('sql206.infinityfree.com', 'if0_37566442','QzYHvjDoCmJek9','if0_37566442_modulo2_GRS') or exit ("No se pudo conectar a la base de datos");        
-
-
+$conexion = mysqli_connect('sql206.infinityfree.com', 'if0_37566442','QzYHvjDoCmJek9','if0_37566442_modulo2_GRS') or exit ("No se pudo conectar a la base de datos");
 
 mysqli_query($conexion, "INSERT INTO consultas VALUES(DEFAULT,'$nombre_form','$edad_form','$email_form','$type_form', '$mensaje_form')");
 
